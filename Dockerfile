@@ -6,6 +6,8 @@ RUN pip install --upgrade pip
 
 # get curl for healthchecks
 RUN apk add curl
+RUN apk add build-base
+RUN apk add libffi-dev
 
 # permissions and nonroot user for tightened security
 RUN adduser -D nonroot
